@@ -1,0 +1,205 @@
+/* ------------------ VARIABLES CSS ------------------ */
+:root {
+  --main-bg: #121212;
+  --content-bg: #ffffff;
+  --text-color: #f1f1f1;
+  --accent-color: #f58233;
+  --nav-bg: #e74c3c;
+  --footer-bg: #e74c3c;
+  --font-family: "Roboto", Arial, sans-serif;
+}
+
+/* ------------------ BASE ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.6;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* ------------------ TYPOGRAPHIE ET LIENS ------------------ */
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+/* ------------------ HEADER ------------------ */
+.main-header img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.main-header nav {
+  background-color: var(--nav-bg);
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.main-header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.main-header nav ul li a {
+  color: #fff;
+  padding: 10px 20px;
+  /* display: inline-block; */
+  border-radius: 4px;
+}
+
+.main-header nav ul li a:hover {
+  background-color: var(--accent-color);
+}
+
+/* ------------------ CONTENU PRINCIPAL ------------------ */
+.content-wrapper {
+  margin: 20px auto;
+  width: 65%;
+  float: left;
+}
+
+.content-block {
+  background-color: var(--content-bg);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #333;
+}
+
+.content-block .meta {
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.post-content mark {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* ------------------ IMAGES ET FIGURE ------------------ */
+figure {
+  margin: 20px 0;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* ------------------ ASIDE ------------------ */
+.sidebar {
+  width: 30%;
+  float: right;
+  margin: 20px auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar article {
+  background-color: var(--content-bg);
+  padding: 20px;
+  border-radius: 5px;
+  color: #333;
+}
+
+/* ------------------ FOOTER ------------------ */
+.footer {
+  background-color: var(--footer-bg);
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+  float: left;
+}
+
+/* ------------------ MULTIMÉDIA ------------------ */
+audio,
+video,
+iframe {
+  width: 100%;
+  margin: 15px 0;
+}
+
+/* ------------------ INDICATEURS DE PROGRÈS ------------------ */
+meter,
+progress {
+  width: 100%;
+  height: 8px;
+  margin-bottom: 10px;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media screen and (max-width: 768px) {
+  .content-wrapper,
+  .sidebar {
+    width: 100%;
+    float: left;
+  }
+
+  .main-header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* ------------------ PORTFOLIO ------------------ */
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding-top: 20px;
+}
+
+/* Style général pour tous les items */
+.grid-item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}

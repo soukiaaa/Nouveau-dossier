@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 / CSS3 Portfolio</title>
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="icon" href="img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <img src="img/Capture60.PNG" alt="Bannière principale" />
+      <nav role="navigation">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="galery.html">Portfolio</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content-wrapper">
+      <section class="content-block">
+        <h2><a href="#">Mon intro musicale</a></h2>
+        <p class="meta">Écrit par : Khaled</p>
+        <article>
+          <figure>
+            <img
+              src="img/piano.jfif"
+              alt="Image piano"
+              class="responsive-img"
+            />
+            <figcaption>Description de la musique.</figcaption>
+          </figure>
+          <audio src="media/Calm-and-Peaceful.mp3" controls>
+            Votre navigateur ne supporte pas l'audio.
+          </audio>
+          <p class="post-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            <mark>Texte important</mark>.
+            <details>
+              <summary>Lire plus</summary>
+              Détails étendus de l’article...
+            </details>
+          </p>
+        </article>
+      </section>
+
+      <section class="content-block">
+        <h2><a href="#">Tutoriel vidéo</a></h2>
+        <p class="meta">Écrit par : Khaled</p>
+        <article>
+          <video src="media/intro.mp4" width="100%" controls>
+            Votre navigateur ne supporte pas les vidéos.
+          </video>
+          <p>
+            Compétences :
+            <br />
+            Photoshop <meter value="40" min="0" max="100"></meter><br />
+            Illustrator <meter value="80" min="0" max="100"></meter><br />
+            InDesign <progress value="30" max="100"></progress><br />
+            HTML5 <progress value="90" max="100"></progress>
+          </p>
+        </article>
+      </section>
+
+      <section class="content-block">
+        <h2><a href="#">Autre tutoriel</a></h2>
+        <p class="meta">Écrit par : Khaled</p>
+        <article>
+          <p>Contenu textuel d’un autre tutoriel.</p>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/BmIhecAVc3M"
+            title="Tutoriel vidéo YouTube"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </article>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <article>
+        <h3><a href="#">Barre latérale 1</a></h3>
+        <p>Texte de la première sidebar.</p>
+      </article>
+      <article>
+        <h3><a href="#">Barre latérale 2</a></h3>
+        <p>Texte de la deuxième sidebar.</p>
+      </article>
+      <article>
+        <h3><a href="#">Barre latérale 3</a></h3>
+        <p>Texte de la troisième sidebar.</p>
+      </article>
+    </aside>
+
+    <footer class="footer">
+      <p>&copy; 2025 - Portfolio de Khaled</p>
+    </footer>
+  </body>
+</html>
